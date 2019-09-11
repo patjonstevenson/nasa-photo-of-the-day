@@ -1,19 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Photos from "./components/Photos";
+import Header from "./components/Header";
 
 function App() {
+  const [date, setDate] = useState("2019-09-11");
+
   return (
     <div className="App">
-      <Photos />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun{" "}
-        <span role="image" aria-label="Img">
-          🚀
-        </span>
-        !
-      </p>
+      <Header />
+      <Photos date={date} />
     </div>
   );
 }
