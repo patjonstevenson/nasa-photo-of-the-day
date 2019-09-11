@@ -11,7 +11,7 @@ export default function Date({ updater }) {
         }}
       >
         <label>
-          <h4>Date (YYYY-MM-DD)</h4>
+          <h4>Pick a Date</h4>
           <input
             type="date"
             value={newDate}
