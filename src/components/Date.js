@@ -13,7 +13,7 @@ export default function Date({ updater }) {
         <label>
           <h4>Date (YYYY-MM-DD)</h4>
           <input
-            type="text"
+            type="date"
             value={newDate}
             onChange={event => {
               event.preventDefault();
@@ -21,6 +21,10 @@ export default function Date({ updater }) {
             }}
           ></input>
         </label>
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
