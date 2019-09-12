@@ -23,7 +23,9 @@ export default function PhotoCard({ imgUrl, hdUrl, date, explanation, title }) {
       opts={{ width: "100%" }}
     />
   ) : (
-    <CardImg top width="100%" src={imgUrl} alt={title}></CardImg>
+    <a href={hdUrl}>
+      <CardImg top width="100%" src={imgUrl} alt={title}></CardImg>
+    </a>
   );
 
   return (
