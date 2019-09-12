@@ -27,31 +27,5 @@ export default function Date({ updater }) {
       </FormGroup>
       <Button type="submit">Submit</Button>
     </Form>
-
-    /*<div>
-      <form
-        onSubmit={event => {
-          event.preventDefault();
-          updater(newDate);
-        }}
-      >
-        <label>
-          <h4>Pick a Date</h4>
-          <input
-            type="date"
-            value={newDate}
-            onChange={event => {
-              event.preventDefault();
-              setNewDate(event.target.value);
-            }}
-          ></input>
-        </label>
-        <br />
-        <br />
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-          */
   );
 }
