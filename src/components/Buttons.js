@@ -6,6 +6,7 @@ import * as moment from "moment/moment";
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 0 5%;
 `;
 
 export default function Buttons({ updater, date }) {
