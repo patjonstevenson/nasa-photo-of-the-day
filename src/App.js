@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+
 import * as moment from "moment/moment";
 import "./App.css";
 import Photos from "./components/Photos";
 import Header from "./components/Header";
 import Date from "./components/Date";
+import Buttons from "./components/Buttons";
 
 function App() {
   const [date, setDate] = useState(moment().format("YYYY[-]MM[-]DD"));
@@ -12,6 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <Date updater={setDate} />
+      <Buttons date={date} updater={setDate} />
       <Photos date={date} />
     </div>
   );

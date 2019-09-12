@@ -10,11 +10,6 @@ import {
 import YouTube from "react-youtube";
 
 export default function PhotoCard({ imgUrl, hdUrl, date, explanation, title }) {
-  console.log(
-    String(imgUrl)
-      .split("?")[0]
-      .split("/")[-1]
-  );
   const med = String(imgUrl)
     .split(".")
     .includes("youtube") ? (
