@@ -18,7 +18,7 @@ export default function Photos({ date }) {
   }, [date]);
 
   return (
-    <div class="card-container">
+    <div className="card-container">
       <PhotoCard
         imgUrl={photo.url}
         hdUrl={photo.hdurl}

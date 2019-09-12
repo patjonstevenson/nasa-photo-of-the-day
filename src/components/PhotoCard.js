@@ -2,7 +2,8 @@ import React from "react";
 
 export default function PhotoCard({ imgUrl, hdUrl, date, explanation, title }) {
   const media =
-    String(imgUrl).substr(-3, 3) === "jpg" ? (
+    String(imgUrl).substr(-3, 3) === "jpg" ||
+    String(imgUrl).substr(-4, 4) === "jpeg" ? (
       <a href={hdUrl}>
         <img className="photo" src={imgUrl} alt="NASA photo" />
       </a>
