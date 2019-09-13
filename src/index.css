@@ -11,3 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h2,
+h3,
+h4 {
+  line-height: 1;
+  margin: 2.5%;
+}
+
+form {
+  margin: 15px 30%;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+button {
+  height: 30px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  background-color: #0065af;
+  color: white;
+  border-bottom: 10px solid #f21f27;
+  border-top: 10px solid #f21f27;
+}
+
+.card-container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 20px 1rem;
+  height: 90vh;
+}
+
+.photo-card {
+  height: 90vh;
+  margin: 0 20% auto;
+}
+
+.photo {
+  height: 50%;
+}
